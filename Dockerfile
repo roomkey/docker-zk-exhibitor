@@ -2,8 +2,8 @@ FROM debian
 MAINTAINER Mike Babineau michael.babineau@gmail.com
 
 ENV \
-    ZK_RELEASE="http://www.apache.org/dist/zookeeper/zookeeper-3.4.13/zookeeper-3.4.13.tar.gz" \
-    EXHIBITOR_POM="https://raw.githubusercontent.com/soabase/exhibitor/master/exhibitor-standalone/src/main/resources/buildscripts/standalone/maven/pom.xml" \
+    ZK_RELEASE="http://www.apache.org/dist/zookeeper/zookeeper-3.5.5/apache-zookeeper-3.5.5.tar.gz" \
+    EXHIBITOR_POM="https://raw.githubusercontent.com/soabase/exhibitor/9cf9c84e4c48f8883bccb869e9ef7c2c1ac03ab1/exhibitor-standalone/src/main/resources/buildscripts/standalone/maven/pom.xml" \
     # Append "+" to ensure the package doesn't get purged
     BUILD_DEPS="curl maven openjdk-8-jdk+" \
     DEBIAN_FRONTEND="noninteractive"
